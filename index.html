@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green Page Button</title>
+  <style>
+    body {
+      background-color: white;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="button" id="greenButton">Click Me!</button>
+  </div>
+
+  <script>
+    var button = document.getElementById("greenButton");
+    
+    button.addEventListener("click", function() {
+      document.body.style.backgroundColor = "green";
+    });
+  </script>
+</body>
+</html>
